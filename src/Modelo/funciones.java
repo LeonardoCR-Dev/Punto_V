@@ -8,7 +8,7 @@ public class funciones {
     private Principal vistaPrincipal;
 
     public void limpiarUsuario() {
-  //hola      
+  
 //        modeloUsuario.setId(0);
         modeloUsuario.setNom_usuario(null);
         modeloUsuario.setNombres(null);
