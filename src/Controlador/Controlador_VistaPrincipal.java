@@ -25,7 +25,7 @@ public class Controlador_VistaPrincipal implements ActionListener {
         this.vistaLogin = vistaLogin;
         
         this.vistaPrincipal.jButton_CerrarSesion.addActionListener(this);
-        this.vistaPrincipal.jButton_Admin.addActionListener(this);
+       
     }
     
     @Override
@@ -43,10 +43,7 @@ public class Controlador_VistaPrincipal implements ActionListener {
             vistaPrincipal.dispose();
             vistaLogin.setVisible(true);
             
-        }
-        if (e.getSource() == vistaPrincipal.jButton_Admin) {
-            System.out.println("clic botonnnn");
-        }
+        }       
     }
     
     private void limpiarUsuario() {
@@ -60,8 +57,8 @@ public class Controlador_VistaPrincipal implements ActionListener {
     }
     
     private void tipoVista() {
-        vistaPrincipal.jLabel_Admin.setVisible(false);
-        vistaPrincipal.jButton_Admin.setVisible(false);
+        
+        vistaPrincipal.jButton_Usuarios_ADMIN.setVisible(false);
     }
     
 }

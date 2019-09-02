@@ -18,8 +18,7 @@ public class funciones {
         modeloUsuario.setTelefono(null);
     }
 
-    public void tipoVista() {
-        vistaPrincipal.jLabel_Admin.setVisible(false);
-        vistaPrincipal.jButton_Admin.setVisible(false);
+    public void tipoVista() {        
+        vistaPrincipal.jButton_Usuarios_ADMIN.setVisible(false);
     }
 }

@@ -98,12 +98,12 @@ public class Controlador_Usuario implements ActionListener {
     }
 
     private void tipoVistaUsuario() {
-        vistaPrincipal.jLabel_Admin.setVisible(false);
-        vistaPrincipal.jButton_Admin.setVisible(false);
+        
+        vistaPrincipal.jButton_Usuarios_ADMIN.setVisible(false);
     }
 
     private void tipoVistaAdministrador() {
-        vistaPrincipal.jLabel_Admin.setVisible(true);
-        vistaPrincipal.jButton_Admin.setVisible(true);
+        vistaPrincipal.jButton_Usuarios_ADMIN.setVisible(true);
+        
     }
 }

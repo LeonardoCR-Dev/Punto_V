@@ -31,10 +31,8 @@ public class Principal extends javax.swing.JFrame {
         jToolBar1 = new javax.swing.JToolBar();
         jLabel1 = new javax.swing.JLabel();
         jLabel_UsuarioActivo = new javax.swing.JLabel();
-        jLabel_Usu = new javax.swing.JLabel();
-        jButton_Usu = new javax.swing.JButton();
-        jLabel_Admin = new javax.swing.JLabel();
-        jButton_Admin = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton_Usuarios_ADMIN = new javax.swing.JButton();
         jButton_CerrarSesion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -42,37 +40,50 @@ public class Principal extends javax.swing.JFrame {
         jToolBar1.setFloatable(false);
         jToolBar1.setRollover(true);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
         jLabel1.setText("Usuario Activo: ");
         jToolBar1.add(jLabel1);
 
-        jLabel_UsuarioActivo.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel_UsuarioActivo.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
         jLabel_UsuarioActivo.setMaximumSize(new java.awt.Dimension(300, 20));
         jLabel_UsuarioActivo.setMinimumSize(new java.awt.Dimension(200, 20));
         jLabel_UsuarioActivo.setPreferredSize(new java.awt.Dimension(200, 20));
         jToolBar1.add(jLabel_UsuarioActivo);
 
-        jLabel_Usu.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel_Usu.setText("Usuario2");
-        jToolBar1.add(jLabel_Usu);
+        jButton1.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/venta.png"))); // NOI18N
+        jButton1.setMnemonic('V');
+        jButton1.setText("Iniciar Venta (ALT+V)");
+        jButton1.setToolTipText("Iniciar Venta");
+        jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton1);
 
-        jButton_Usu.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton_Usu.setText("Usuario 1");
-        jButton_Usu.setFocusable(false);
-        jButton_Usu.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton_Usu.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton_Usu);
+        jButton_Usuarios_ADMIN.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jButton_Usuarios_ADMIN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Sin título-2.png"))); // NOI18N
+        jButton_Usuarios_ADMIN.setMnemonic('U');
+        jButton_Usuarios_ADMIN.setText("Usuarios (ALT+U)");
+        jButton_Usuarios_ADMIN.setToolTipText("Opciones De Usuarios");
+        jButton_Usuarios_ADMIN.setBorderPainted(false);
+        jButton_Usuarios_ADMIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_Usuarios_ADMIN.setFocusable(false);
+        jButton_Usuarios_ADMIN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton_Usuarios_ADMIN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton_Usuarios_ADMIN);
 
-        jLabel_Admin.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel_Admin.setText("Administrador1");
-        jToolBar1.add(jLabel_Admin);
-
-        jButton_Admin.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton_Admin.setText("Administrador");
-        jButton_Admin.setFocusable(false);
-        jButton_Admin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton_Admin.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jButton_Admin);
+        jButton_CerrarSesion.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        jButton_CerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/configuracion.png"))); // NOI18N
+        jButton_CerrarSesion.setMnemonic('S');
+        jButton_CerrarSesion.setText("Cerrar Sesion (ALT+S)");
+        jButton_CerrarSesion.setToolTipText("Cerrar Sesion De Usuario");
+        jButton_CerrarSesion.setBorderPainted(false);
+        jButton_CerrarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton_CerrarSesion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton_CerrarSesion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton_CerrarSesion);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,28 +93,22 @@ public class Principal extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-
-        jButton_CerrarSesion.setText("Cerrar Sesion");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton_CerrarSesion)
-                .addGap(122, 122, 122))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
-                .addComponent(jButton_CerrarSesion)
-                .addGap(0, 84, Short.MAX_VALUE))
+                .addGap(0, 419, Short.MAX_VALUE))
         );
 
         pack();
@@ -146,12 +151,10 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButton_Admin;
+    private javax.swing.JButton jButton1;
     public javax.swing.JButton jButton_CerrarSesion;
-    private javax.swing.JButton jButton_Usu;
+    public javax.swing.JButton jButton_Usuarios_ADMIN;
     private javax.swing.JLabel jLabel1;
-    public javax.swing.JLabel jLabel_Admin;
-    private javax.swing.JLabel jLabel_Usu;
     public javax.swing.JLabel jLabel_UsuarioActivo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JToolBar jToolBar1;
